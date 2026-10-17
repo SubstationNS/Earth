@@ -22,7 +22,7 @@ The polyoctave effect is from: [Terrarium-Poly-Octave](https://github.com/schult
 | 3-Way Switch 3 | Footswitch Action | Left=Momentary Freeze, Center=Momentary Overdrive, Right=Momentary Octave | 
 | Dip Switch 1 | Disable Input Diffusion | Turn on to disable the input diffusion |
 | Dip Switch 2 | Octave only mode | Doesn't allow dry signal to the reverb (only octave) when in an octave mode |
-| Dip Switch 3 |  |  |
+| Dip Switch 3 | Mono out | Turn on to sum L+R reverb to both outputs (for mono rigs) |
 | Dip Switch 4 |  |  |
 | FS 1 | Bypass/Engage |  |
 | FS 2 | Footswitch Action | Perform action based on toggle switch 3 |

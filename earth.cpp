@@ -543,8 +543,14 @@ static void AudioCallback(AudioHandle::InputBuffer  in,
             float leftOutput = inputL * dryMix + effectLeftOut * wetMix * 0.4;  // 0.4 is for overall volume reduction on reverb
             float rightOutput = inputR * dryMix + effectRightOut * wetMix* 0.4;
 
-            out[0][i] = leftOutput;
-            out[1][i] = rightOutput;
+            if (dipValues[2]) {  // Mono out: sum L+R to both outputs
+                float monoOutput = (leftOutput + rightOutput) * 0.5;
+                out[0][i] = monoOutput;
+                out[1][i] = monoOutput;
+            } else {
+                out[0][i] = leftOutput;
+                out[1][i] = rightOutput;
+            }
 
         }
 
